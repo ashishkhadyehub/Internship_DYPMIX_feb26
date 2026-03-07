@@ -16,7 +16,11 @@ namespace WebformERP
         {
             if(Session["EmployeeId"]!=null)
             {
-                getdata();
+                if(!IsPostBack)
+                {
+                    getdata();
+                }
+                
             }
             else
             {
@@ -51,6 +55,8 @@ namespace WebformERP
             cmd.Parameters.AddWithValue("@email",txtEmail.Text);
             cmd.Parameters.AddWithValue("@id", Session["EmployeeId"]);
             con.Open();
+            cmd.ExecuteNonQuery();
+            getdata();
 
         }
     }
