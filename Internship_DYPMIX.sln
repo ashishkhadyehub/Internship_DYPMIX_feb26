@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training", "Training\Traini
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebformERP", "WebformERP\WebformERP.csproj", "{F2F31719-8C0C-496F-99EF-F55EBBB15723}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcore_training", "dotnetcore_training\dotnetcore_training.csproj", "{A15C1276-32A9-4024-9026-10EF7182D2CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F2F31719-8C0C-496F-99EF-F55EBBB15723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F31719-8C0C-496F-99EF-F55EBBB15723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2F31719-8C0C-496F-99EF-F55EBBB15723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15C1276-32A9-4024-9026-10EF7182D2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15C1276-32A9-4024-9026-10EF7182D2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15C1276-32A9-4024-9026-10EF7182D2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15C1276-32A9-4024-9026-10EF7182D2CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
