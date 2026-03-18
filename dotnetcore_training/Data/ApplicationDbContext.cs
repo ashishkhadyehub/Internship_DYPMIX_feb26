@@ -1,5 +1,6 @@
 ﻿using dotnetcore_training.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore;
 
 namespace dotnetcore_training.Data
 {
@@ -11,6 +12,8 @@ namespace dotnetcore_training.Data
         }
 
         public DbSet<Student> Students { get; set; }
+
+      
 
 
     }
