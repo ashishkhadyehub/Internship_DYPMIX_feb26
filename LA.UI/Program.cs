@@ -1,4 +1,6 @@
 using LA.DAL;
+using LA.DAL.Implementations;
+using LA.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +10,16 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer
 (builder.Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("LA.UI")));
+
+
+builder.Services.AddScoped<ICountryRepo, CountryRepo>();
+builder.Services.AddScoped<IStateRepo, StateRepo>();
+builder.Services.AddScoped<IDistrictRepo, DistrictRepo>();
+
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

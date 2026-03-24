@@ -1,5 +1,6 @@
 ﻿using LA.DAL.Interfaces;
 using LA.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace LA.DAL.Implementations
 
         public IEnumerable<District> GetAll()
         {
-            return _context.Districts.ToList();
+            return _context.Districts.Include(x=>x.State).ThenInclude(y=>y.Country).ToList();
         }
 
         public District GetById(int id)
